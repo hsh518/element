@@ -6,6 +6,7 @@ const Layout = () => import('@/domes/layout')
 const Container = () => import('@/domes/contaniner')
 const Input = () => import('@/domes/input')
 const Switch = () => import('@/domes/switch')
+const Loading =() => import('@/domes/loading')
 
 Vue.use(Router)
 
@@ -37,6 +38,10 @@ export default new Router({
     	path: '/guide',
     	name: 'Guide',
     	component: Guide
+    },{
+      path: '/loading',
+      name: 'Loading',
+      component: Loading
     }
   ]
 })
