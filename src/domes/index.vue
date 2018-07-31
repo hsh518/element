@@ -53,7 +53,10 @@
         	},{
         		title: 'Container布局',
         		path: '/container'
-        	}]
+        	},{
+        	  title: 'Button按钮',
+            path: '/button'
+          }]
         },{
         	title: 'Form',
         	child: [{
@@ -63,6 +66,15 @@
         		title: 'Switch开关',
         		path: '/switch'
         	}]
+        },{
+            title: 'Notice',
+            child: [{
+              title: 'Loading...组件',
+              path: '/loading'
+            },{
+              title: 'Message信息提示',
+              path: '/message'
+            }]
         }]
       }
     },

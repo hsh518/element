@@ -6,7 +6,9 @@ const Layout = () => import('@/domes/layout')
 const Container = () => import('@/domes/contaniner')
 const Input = () => import('@/domes/input')
 const Switch = () => import('@/domes/switch')
-const Loading =() => import('@/domes/loading')
+const Loading = () => import('@/domes/loading')
+const Message = () => import('@/domes/message')
+const Button = () => import('@/domes/button')
 
 Vue.use(Router)
 
@@ -33,15 +35,23 @@ export default new Router({
       	path: 'switch',
       	name: 'Switch',
       	component: Switch
+      },{
+        path: '/loading',
+        name: 'Loading',
+        component: Loading
+      },{
+        path: '/message',
+        name: 'Message',
+        component: Message
+      },{
+        path: '/button',
+        name: 'Button',
+        component: Button
       }]
     },{
     	path: '/guide',
     	name: 'Guide',
     	component: Guide
-    },{
-      path: '/loading',
-      name: 'Loading',
-      component: Loading
     }
   ]
 })
